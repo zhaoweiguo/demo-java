@@ -1,0 +1,12 @@
+
+server:
+  port: 4000
+  #graceful(优雅停机),immediate(立即停机:缺省配置)
+  shutdown: graceful
+  #io-threads(异步非阻塞IO线程数),worker-threads(同步阻塞工作线程数)
+  undertow:
+    io-threads: 1
+    worker-threads: 8
+spring:
+  application:
+    name: cloud-voice-svc-nlp
